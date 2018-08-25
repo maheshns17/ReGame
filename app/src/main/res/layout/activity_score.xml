@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    android:orientation="vertical"
+    tools:context="pmap.com.dealbuysell_regame.activities.ReGameActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        />
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btn_next_level"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50"
+            android:background="#2366d1"
+            android:text="Click for next level"
+            android:textAlignment="gravity"
+            android:textColor="#f4f4f4" />
+    </RelativeLayout>
+</RelativeLayout>
